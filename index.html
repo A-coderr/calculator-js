@@ -6,6 +6,43 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-
+        <h1>Modern JavaScript Calculator</h1>
+        <div id="calculator">
+            <div id="calculator-head">
+                <input type="text" id="calculator-display" disabled>
+            </div>
+            <div id="calculator-body">
+                <div>
+                    <button class="button button-top" onclick="clearDisplay()">C</button>
+                    <button class="button button-top" onclick="addToDisplay('+/-')">+/-</button>
+                    <button class="button button-top" onclick="addToDisplay('%')">%</button>
+                    <button class="button button-operator" onclick="addToDisplay('/')">/</button>
+                </div>
+                <div>
+                    <button class="button button-number" onclick="addToDisplay('7')">7</button>
+                    <button class="button button-number" onclick="addToDisplay('8')">8</button>
+                    <button class="button button-number" onclick="addToDisplay('9')">9</button>
+                    <button class="button button-operator" onclick="addToDisplay('*')">*</button>
+                </div>
+                <div>
+                    <button class="button button-number" onclick="addToDisplay('4')">4</button>
+                    <button class="button button-number" onclick="addToDisplay('5')">5</button>
+                    <button class="button button-number" onclick="addToDisplay('6')">6</button>
+                    <button class="button button-operator" onclick="addToDisplay('-')">-</button>
+                </div>
+                <div>
+                    <button class="button button-number" onclick="addToDisplay('1')">1</button>
+                    <button class="button button-number" onclick="addToDisplay('2')">2</button>
+                    <button class="button button-number" onclick="addToDisplay('3')">3</button>
+                    <button class="button button-operator" onclick="addToDisplay('+')">+</button>
+                </div>
+                <div>
+                    <button class="button button-number" onclick="addToDisplay('0')">0</button>
+                    <button class="button button-number" onclick="addToDisplay('.')">.</button>
+                    <button class="button button-number" onclick="">b</button>
+                    <button class="button button-calculate" onclick="calculateResult()">=</button>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
